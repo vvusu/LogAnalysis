@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF31CBEB1BE4DA5F0037722A /* NSColor+Expanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF31CBEA1BE4DA5F0037722A /* NSColor+Expanded.swift */; };
+		AF31CBED1BE4E5E00037722A /* SwiftColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF31CBEC1BE4E5E00037722A /* SwiftColors.swift */; };
 		AF8232641BDDEEE8000DE5AE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8232631BDDEEE8000DE5AE /* AppKit.framework */; };
 		AF8232661BDDFF86000DE5AE /* DropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8232651BDDFF86000DE5AE /* DropView.swift */; };
 		AF8327E11BD73CD200C66A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8327E01BD73CD200C66A38 /* AppDelegate.swift */; };
@@ -15,6 +17,11 @@
 		AF8327E81BD73CD200C66A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8327E61BD73CD200C66A38 /* Main.storyboard */; };
 		AF8327F31BD73CD200C66A38 /* Log_AnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8327F21BD73CD200C66A38 /* Log_AnalysisTests.swift */; };
 		AF8327FE1BD73CD200C66A38 /* Log_AnalysisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8327FD1BD73CD200C66A38 /* Log_AnalysisUITests.swift */; };
+		AF84FAD61BE36A8F00AF016B /* SUXLSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84FAD51BE36A8F00AF016B /* SUXLSCell.swift */; };
+		AF84FAD81BE36AD400AF016B /* SUStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84FAD71BE36AD400AF016B /* SUStyle.swift */; };
+		AF84FADA1BE36AE800AF016B /* SUWorkBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84FAD91BE36AE800AF016B /* SUWorkBook.swift */; };
+		AF84FADC1BE36B0500AF016B /* SUWorkSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84FADB1BE36B0500AF016B /* SUWorkSheet.swift */; };
+		AF84FADE1BE36B2000AF016B /* SUWorkSheetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84FADD1BE36B2000AF016B /* SUWorkSheetRow.swift */; };
 		AF9792281BE0879B00A2ED9C /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9792181BE0879B00A2ED9C /* FromJSON.swift */; };
 		AF9792291BE0879B00A2ED9C /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9792191BE0879B00A2ED9C /* Map.swift */; };
 		AF97922A1BE0879B00A2ED9C /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97921A1BE0879B00A2ED9C /* Mapper.swift */; };
@@ -54,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF31CBEA1BE4DA5F0037722A /* NSColor+Expanded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Expanded.swift"; sourceTree = "<group>"; };
+		AF31CBEC1BE4E5E00037722A /* SwiftColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftColors.swift; sourceTree = "<group>"; };
 		AF8232631BDDEEE8000DE5AE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		AF8232651BDDFF86000DE5AE /* DropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropView.swift; sourceTree = "<group>"; };
 		AF8327DD1BD73CD200C66A38 /* Log Analysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Log Analysis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +77,11 @@
 		AF8327F91BD73CD200C66A38 /* Log AnalysisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Log AnalysisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8327FD1BD73CD200C66A38 /* Log_AnalysisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_AnalysisUITests.swift; sourceTree = "<group>"; };
 		AF8327FF1BD73CD200C66A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF84FAD51BE36A8F00AF016B /* SUXLSCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUXLSCell.swift; sourceTree = "<group>"; };
+		AF84FAD71BE36AD400AF016B /* SUStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUStyle.swift; sourceTree = "<group>"; };
+		AF84FAD91BE36AE800AF016B /* SUWorkBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUWorkBook.swift; sourceTree = "<group>"; };
+		AF84FADB1BE36B0500AF016B /* SUWorkSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUWorkSheet.swift; sourceTree = "<group>"; };
+		AF84FADD1BE36B2000AF016B /* SUWorkSheetRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUWorkSheetRow.swift; sourceTree = "<group>"; };
 		AF9792181BE0879B00A2ED9C /* FromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromJSON.swift; sourceTree = "<group>"; };
 		AF9792191BE0879B00A2ED9C /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		AF97921A1BE0879B00A2ED9C /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
@@ -174,6 +188,18 @@
 			path = "Log AnalysisUITests";
 			sourceTree = "<group>";
 		};
+		AF84FAD41BE3698D00AF016B /* SUSheetXLS */ = {
+			isa = PBXGroup;
+			children = (
+				AF84FAD51BE36A8F00AF016B /* SUXLSCell.swift */,
+				AF84FAD71BE36AD400AF016B /* SUStyle.swift */,
+				AF84FAD91BE36AE800AF016B /* SUWorkBook.swift */,
+				AF84FADB1BE36B0500AF016B /* SUWorkSheet.swift */,
+				AF84FADD1BE36B2000AF016B /* SUWorkSheetRow.swift */,
+			);
+			path = SUSheetXLS;
+			sourceTree = "<group>";
+		};
 		AF9792161BE0879B00A2ED9C /* ObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,7 +241,9 @@
 		AF9FB1AD1BDF1992000364D2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AF31CBEC1BE4E5E00037722A /* SwiftColors.swift */,
 				AF9FB1AE1BDF1992000364D2 /* String+Subscripts.swift */,
+				AF31CBEA1BE4DA5F0037722A /* NSColor+Expanded.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -223,6 +251,7 @@
 		AF9FB2391BE06017000364D2 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				AF84FAD41BE3698D00AF016B /* SUSheetXLS */,
 				AF9792161BE0879B00A2ED9C /* ObjectMapper */,
 			);
 			path = Libraries;
@@ -367,18 +396,25 @@
 				AFF3E2FF1BE22DF300314AD6 /* LoggerManager.swift in Sources */,
 				AF8327E11BD73CD200C66A38 /* AppDelegate.swift in Sources */,
 				AF9792291BE0879B00A2ED9C /* Map.swift in Sources */,
+				AF84FADA1BE36AE800AF016B /* SUWorkBook.swift in Sources */,
 				AF9792311BE0879B00A2ED9C /* EnumTransform.swift in Sources */,
 				AF97922F1BE0879B00A2ED9C /* DateFormatterTransform.swift in Sources */,
 				AF9792301BE0879B00A2ED9C /* DateTransform.swift in Sources */,
+				AF84FAD81BE36AD400AF016B /* SUStyle.swift in Sources */,
 				AF97922A1BE0879B00A2ED9C /* Mapper.swift in Sources */,
 				AF9FB1AF1BDF1992000364D2 /* String+Subscripts.swift in Sources */,
 				AF8232661BDDFF86000DE5AE /* DropView.swift in Sources */,
+				AF84FADC1BE36B0500AF016B /* SUWorkSheet.swift in Sources */,
 				AF9792281BE0879B00A2ED9C /* FromJSON.swift in Sources */,
 				AF9792341BE0879B00A2ED9C /* TransformType.swift in Sources */,
+				AF84FAD61BE36A8F00AF016B /* SUXLSCell.swift in Sources */,
 				AF9792331BE0879B00A2ED9C /* TransformOf.swift in Sources */,
 				AF97922C1BE0879B00A2ED9C /* ToJSON.swift in Sources */,
 				AFF3E2FC1BE0E09F00314AD6 /* LogDetailVC.swift in Sources */,
+				AF31CBED1BE4E5E00037722A /* SwiftColors.swift in Sources */,
+				AF84FADE1BE36B2000AF016B /* SUWorkSheetRow.swift in Sources */,
 				AF97922B1BE0879B00A2ED9C /* Operators.swift in Sources */,
+				AF31CBEB1BE4DA5F0037722A /* NSColor+Expanded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

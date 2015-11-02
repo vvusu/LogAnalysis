@@ -14,7 +14,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     @IBOutlet var titleLabel: NSTextField!
     let myQueue: dispatch_queue_t = dispatch_queue_create("logAnalysis", nil)
     let logManager = LoggerManager.sharedInstance
-    var dataArr: Array<[Log]> = []
+    var dataArr: Array<[[Log]]> = []
     var logDataArr: Array<Log> = []
     var fileURL: NSURL!
     
@@ -60,7 +60,12 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
             })
         }
     }
-        
+    
+    //output file
+    @IBAction func outPut(sender: NSButton) {
+        self.logManager.createXLSFile("/Users/vvusu/Desktop/")
+    }
+    
     //json 转 dictionary
     func convertStringToDictionary(text: String) -> [String:AnyObject]? {
         if let data = text.dataUsingEncoding(NSUTF8StringEncoding) {
@@ -87,7 +92,12 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
             return logDataArr.count
         }
         else {
-            return dataArr.count
+            if dataArr.count>0 {
+                return dataArr[0].count
+            }
+            else {
+                return 0
+            }
         }
     }
     
@@ -99,7 +109,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         }
         else if (tableView == self.typeTableView){
             let cellView = tableView.makeViewWithIdentifier("logTypeCell", owner: self) as! NSTableCellView
-            cellView.textField!.stringValue = self.dataArr[row][0].type!
+            cellView.textField!.stringValue = self.dataArr[0][row][0].type!
             return cellView
         }
         else {
@@ -120,7 +130,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         }
         else {
             if self.typeTableView.selectedRow >= 0{
-                self.logDataArr = self.dataArr[self.typeTableView.selectedRow]
+                self.logDataArr = self.dataArr[0][self.typeTableView.selectedRow]
                 self.logTableView.reloadData()
             }
         }

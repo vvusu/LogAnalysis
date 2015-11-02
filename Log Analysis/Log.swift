@@ -38,11 +38,13 @@ class Log: Mappable {
 //        self.userUNID = ""
 //    }
     
-    var time: String?            //日期
     var level: String?           //日志级别
-    var type: String?            //日志类型标识符
-    var message: String?         //日志信息
     var partname: String?        //日志标示
+    //新版本
+    var errorCode: Int?          //日志错误码
+    var type: String?            //日志类型标识符
+    var time: String?            //日期
+    var message: String?         //日志信息
     var logID: String?           //日志ID
     var version: String?         //软件版本
     var systemVersion: String?   //系统版本
@@ -50,17 +52,19 @@ class Log: Mappable {
     var userToken: String?       //用户Token
     var userUN: String?          //用户的un
     var userUNID: String?        //用户的unid
-
+    var bookId: String?          //bookId
     required init?(_ map: Map) {
         mapping(map)
     }
     
     func mapping(map: Map) {
-        time            <- map["time"]
         level           <- map["level"]
+        partname        <- map["partname"]
+        
+        errorCode       <- map["errorCode"]
         type            <- map["type"]
         message         <- map["message"]
-        partname        <- map["partname"]
+        time            <- map["time"]
         logID           <- map["logID"]
         version         <- map["version"]
         systemVersion   <- map["systemVersion"]
@@ -68,12 +72,13 @@ class Log: Mappable {
         userToken       <- map["userToken"]
         userUN          <- map["userUN"]
         userUNID        <- map["userUNID"]
+        bookId          <- map["bookId"]
     }
 }
 
 extension Log: CustomStringConvertible {
     var description: String {
-        return "LogSwiftyJSON - time: \(time)\nlevel: \(level)\ntype: \(type)\nmessage: \(message)\npartname: \(partname)\nlogID: \(logID)\nversion: \(version)\nsystemVersion: \(systemVersion)\nphoneModel: \(phoneModel)\nuserToken: \(userToken)\nuserUN: \(userUN)\nuserUNID: \(userUNID)"
+        return "LogSwiftyJSON - errorCode: \(errorCode)\ntime: \(time)\nlevel: \(level)\ntype: \(type)\nmessage: \(message)\npartname: \(partname)\nlogID: \(logID)\nversion: \(version)\nsystemVersion: \(systemVersion)\nphoneModel: \(phoneModel)\nuserToken: \(userToken)\nuserUN: \(userUN)\nuserUNID: \(userUNID)\nbookId: \(bookId)"
     }
 }
 

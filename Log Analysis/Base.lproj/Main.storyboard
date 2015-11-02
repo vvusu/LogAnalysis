@@ -674,7 +674,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oEo-lc-xD8" userLabel="titleLabel">
-                                <rect key="frame" x="13" y="6" width="429" height="18"/>
+                                <rect key="frame" x="13" y="6" width="319" height="18"/>
                                 <animations/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="9IG-9n-gpA">
                                     <font key="font" metaFont="system" size="14"/>
@@ -683,9 +683,9 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9fT-4e-CVZ">
-                                <rect key="frame" x="448" y="0.0" width="119" height="32"/>
+                                <rect key="frame" x="332" y="-1" width="119" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="107" id="4aU-RH-ZmR"/>
+                                    <constraint firstAttribute="width" constant="107" id="c5k-gL-dfe"/>
                                 </constraints>
                                 <animations/>
                                 <buttonCell key="cell" type="push" title="Choose File" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="Gxp-5T-FUn">
@@ -697,9 +697,9 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jsD-eL-x4m">
-                                <rect key="frame" x="576" y="0.0" width="126" height="32"/>
+                                <rect key="frame" x="576" y="-1" width="126" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="114" id="ssS-vc-Ks6"/>
+                                    <constraint firstAttribute="width" constant="114" id="78L-ob-WHO"/>
                                 </constraints>
                                 <animations/>
                                 <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="Fsw-uo-9fT">
@@ -870,22 +870,38 @@
                                     <animations/>
                                 </tableHeaderView>
                             </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gfE-P1-Kvl">
+                                <rect key="frame" x="457" y="-1" width="119" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="Yfc-mf-oZg"/>
+                                </constraints>
+                                <animations/>
+                                <buttonCell key="cell" type="push" title="OutPut" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="rHL-sX-tpl">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="outPut:" target="XfG-lQ-9wD" id="PZd-W9-fkw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="jsD-eL-x4m" firstAttribute="top" secondItem="knU-ks-kiH" secondAttribute="bottom" constant="7" id="2NV-kn-xKe"/>
-                            <constraint firstItem="9fT-4e-CVZ" firstAttribute="leading" secondItem="oEo-lc-xD8" secondAttribute="trailing" constant="14" id="6Dl-U3-doY"/>
-                            <constraint firstItem="jsD-eL-x4m" firstAttribute="leading" secondItem="9fT-4e-CVZ" secondAttribute="trailing" constant="21" id="6Ih-g4-9XF"/>
+                            <constraint firstItem="gfE-P1-Kvl" firstAttribute="baseline" secondItem="jsD-eL-x4m" secondAttribute="baseline" id="7MS-JI-Nrs"/>
+                            <constraint firstItem="oEo-lc-xD8" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="15" id="8Sg-bB-Lds"/>
                             <constraint firstItem="knU-ks-kiH" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="150" id="E8T-OB-RXq"/>
+                            <constraint firstItem="gfE-P1-Kvl" firstAttribute="leading" secondItem="9fT-4e-CVZ" secondAttribute="trailing" constant="18" id="FDa-C2-Wct"/>
                             <constraint firstAttribute="trailing" secondItem="knU-ks-kiH" secondAttribute="trailing" id="FJY-ID-eYB"/>
-                            <constraint firstItem="oEo-lc-xD8" firstAttribute="centerY" secondItem="9fT-4e-CVZ" secondAttribute="centerY" constant="2.5" id="Ltk-ug-0kI"/>
+                            <constraint firstItem="oEo-lc-xD8" firstAttribute="bottom" secondItem="9fT-4e-CVZ" secondAttribute="bottom" id="Opr-zK-Yaz"/>
+                            <constraint firstAttribute="bottom" secondItem="oEo-lc-xD8" secondAttribute="bottom" constant="6" id="UQl-h8-W0D"/>
                             <constraint firstItem="ZxE-hH-ABp" firstAttribute="top" secondItem="knU-ks-kiH" secondAttribute="top" id="Umy-mE-PA2"/>
+                            <constraint firstItem="9fT-4e-CVZ" firstAttribute="top" secondItem="knU-ks-kiH" secondAttribute="bottom" constant="8" id="ZMS-HS-4hm"/>
+                            <constraint firstItem="9fT-4e-CVZ" firstAttribute="leading" secondItem="oEo-lc-xD8" secondAttribute="trailing" constant="8" symbolic="YES" id="djU-2U-6Ic"/>
+                            <constraint firstItem="9fT-4e-CVZ" firstAttribute="baseline" secondItem="gfE-P1-Kvl" secondAttribute="baseline" id="dsY-DL-T0f"/>
                             <constraint firstItem="knU-ks-kiH" firstAttribute="leading" secondItem="ZxE-hH-ABp" secondAttribute="trailing" constant="2" id="hDa-4b-C3w"/>
+                            <constraint firstAttribute="trailing" secondItem="jsD-eL-x4m" secondAttribute="trailing" constant="6" id="ijv-nR-7DK"/>
                             <constraint firstItem="ZxE-hH-ABp" firstAttribute="bottom" secondItem="knU-ks-kiH" secondAttribute="bottom" id="nI0-WO-Asw"/>
-                            <constraint firstItem="9fT-4e-CVZ" firstAttribute="baseline" secondItem="jsD-eL-x4m" secondAttribute="baseline" id="nyT-lr-DHh"/>
-                            <constraint firstAttribute="trailing" secondItem="jsD-eL-x4m" secondAttribute="trailing" constant="6" id="qYb-2R-3cP"/>
-                            <constraint firstAttribute="bottom" secondItem="jsD-eL-x4m" secondAttribute="bottom" constant="7" id="r3c-HD-36b"/>
                             <constraint firstItem="ZxE-hH-ABp" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="ut5-Xh-y8c"/>
-                            <constraint firstItem="oEo-lc-xD8" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="15" id="vve-nc-X5Y"/>
+                            <constraint firstItem="jsD-eL-x4m" firstAttribute="leading" secondItem="gfE-P1-Kvl" secondAttribute="trailing" constant="12" symbolic="YES" id="v2n-tx-2Di"/>
                             <constraint firstItem="knU-ks-kiH" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="wOH-jj-dMR"/>
                         </constraints>
                         <animations/>
